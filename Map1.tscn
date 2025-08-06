@@ -1,11 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://bkcg67l8pte2r"]
+[gd_scene load_steps=5 format=3 uid="uid://bkcg67l8pte2r"]
 
 [ext_resource type="PackedScene" uid="uid://c5a6tiadmnv0i" path="res://Enemy.tscn" id="1_3wee7"]
 [ext_resource type="PackedScene" uid="uid://diry6hi0yt4tg" path="res://Target.tscn" id="2_s0gvh"]
+[ext_resource type="PackedScene" uid="uid://bccrq0d3ri03u" path="res://Tower.tscn" id="3_s0gvh"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_j556s"]
-vertices = PackedVector2Array(379.594, 301.133, 96.3984, 253.93, 187.898, 138.898, 468.102, 133.203, 472.102, 519, 214.328, 746.102, 861.07, 750.938, 809.094, 519, 931.563, 447.828, 807.094, 304.93, 1088.87, 303.063, 981.141, 460.227, 1081.88, 871, 972.18, 956.133, 1492.89, 962.883, 1334.8, 871, 1533.01, 529.211, 1341.8, 532.813)
-polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3), PackedInt32Array(0, 3, 4, 5), PackedInt32Array(6, 5, 4, 7), PackedInt32Array(8, 6, 7, 9), PackedInt32Array(8, 9, 10, 11), PackedInt32Array(11, 10, 12, 13), PackedInt32Array(14, 13, 12, 15), PackedInt32Array(16, 14, 15, 17)])
+vertices = PackedVector2Array(379.594, 301.133, 96.3984, 253.93, 187.898, 138.898, 468.102, 133.203, 472.102, 519, 214.328, 746.102, 1341.8, 532.813, 1533.01, 529.211, 1492.89, 962.883, 1334.8, 871, 972.18, 956.133, 1081.88, 871, 981.141, 460.227, 1088.87, 303.063, 807.094, 304.93, 931.563, 447.828, 809.094, 519, 861.07, 750.938, 538.5, 519, 538.5, 559, 539.5, 559, 539.5, 600, 541.5, 600, 541.5, 641, 592.5, 589, 590.5, 589, 590.5, 548, 589.5, 548, 589.5, 519, 592.5, 641)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3), PackedInt32Array(0, 3, 4, 5), PackedInt32Array(6, 7, 8, 9), PackedInt32Array(9, 8, 10, 11), PackedInt32Array(11, 10, 12, 13), PackedInt32Array(14, 13, 12, 15), PackedInt32Array(16, 14, 15, 17), PackedInt32Array(4, 18, 19), PackedInt32Array(19, 20, 21), PackedInt32Array(21, 22, 23), PackedInt32Array(24, 25, 26, 16), PackedInt32Array(26, 27, 28, 16), PackedInt32Array(24, 16, 17, 29), PackedInt32Array(29, 17, 5, 23), PackedInt32Array(23, 5, 4, 21), PackedInt32Array(21, 4, 19)])
 outlines = Array[PackedVector2Array]([PackedVector2Array(183, 129, 478, 123, 482, 509, 799, 509, 797, 295, 1099, 293, 1092, 861, 1325, 861, 1332, 523, 1544, 519, 1502, 973, 962, 966, 971, 468, 939, 460, 869, 761, 200, 756, 366, 309, 78, 261)])
 
 [node name="Map1" type="Node2D"]
@@ -18,3 +19,12 @@ position = Vector2(263, 199)
 
 [node name="Target" parent="NavigationRegion2D" instance=ExtResource("2_s0gvh")]
 position = Vector2(1417, 610)
+
+[node name="Tower" parent="NavigationRegion2D" instance=ExtResource("3_s0gvh")]
+position = Vector2(567, 615)
+
+[node name="Tower2" parent="NavigationRegion2D" instance=ExtResource("3_s0gvh")]
+position = Vector2(565, 574)
+
+[node name="Tower3" parent="NavigationRegion2D" instance=ExtResource("3_s0gvh")]
+position = Vector2(564, 533)
